@@ -1,0 +1,75 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(-45deg, #117c11, #0b3d0b, #1fd655, #0f0f0f);
+    background-size: 400% 400%;
+    animation: backgroundDance 15s ease infinite;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes backgroundDance {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* LOGO CAE DEL CIELO CON REBOTE */
+.logo {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: dropFromSky 2s ease-out;
+}
+
+@keyframes dropFromSky {
+    0% {
+        transform: translateY(-1000px) scale(1.5) rotate(720deg);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* BOTÓN CON EFECTO DE BOTE INFINITO */
+.login-btn {
+    background: linear-gradient(45deg, #45a049, #3ee12b);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    animation: bounceBtn 2s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes bounceBtn {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #255327, #00ff55);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 255, 100, 0.6);
+}

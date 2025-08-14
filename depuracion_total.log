@@ -1,0 +1,25 @@
+Array
+(
+    [POST] => Array
+        (
+            [id] => 67
+            [hexa_usuario] => 1
+            [companero_staff] => Markuus
+            [tipo_sancion] => BAN
+            [fecha_inicio] => 2025-06-08 22:52:00
+            [fecha_fin] => 2025-06-09 22:52:00
+            [motivo] => MG: mala conducta o lenguaje inapropiado. 
+            [pruebas] => Sin pruebas registradas
+            [archivos_prueba] => Array
+                (
+                    [0] => []
+                )
+
+        )
+
+    [FILES] => Array
+        (
+        )
+
+    [archivos_finales] => 
+)
