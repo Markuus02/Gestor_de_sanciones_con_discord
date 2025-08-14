@@ -1,1 +1,26 @@
+/vendor/
 .env
+*.log
+/uploads/
+.DS_Store
+
+name: Auto Push Changes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Auto Push
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto push changes"
+          git push
