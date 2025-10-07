@@ -131,8 +131,8 @@ if (isset($_GET['discord_usuario_id']) || isset($_GET['nombre_usuario'])) {
 
   <!-- centro -->
   <div class="header-center">
-    <img src="log_gtazone.png" alt="Logo de GTA Zone" class="logo">
-    <h3>Sanciones GTAZONE</h3>
+    <img src="meme_norte.png" alt="Logo de GTA Zone" class="logo">
+    <h3>Sanciones Sancionitas</h3>
     <div class="buttons">
       <button class="btn" onclick="toggleSection('formSection')">Registro de Sanciones</button>
       <button class="btn" onclick="toggleSection('searchSection')">Buscador Sanciones</button>

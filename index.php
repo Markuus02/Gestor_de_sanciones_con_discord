@@ -21,7 +21,7 @@ $oauth_url = "https://discord.com/oauth2/authorize?client_id=$client_id&redirect
 <body>
 
 <?php if (!isset($_SESSION['user'])): ?>
-    <img src="log_gtazone.png" alt="Logo" class="logo"> 
+    <img src="meme_norte.png" alt="Logo" class="logo"> 
     <h1>Iniciar sesión con Discord</h1>
     <a class="login-btn" href="<?php echo $oauth_url; ?>">
         Conectar con Discord

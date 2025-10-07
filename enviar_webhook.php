@@ -31,7 +31,7 @@ $url = $modo === "manual" ? $webhookPublico : $webhookInterno;
 
 $payload = [
   "username" => $modo === "manual" ? "📛 Sistema de Sanciones" : "🛠️ Auto-Sanción Interna",
-  "avatar_url" => "https://r2.fivemanage.com/rfCrVWANawnX1lHiZq5sc/log_gtazone.png",
+  "avatar_url" => "https://r2.fivemanage.com/rfCrVWANawnX1lHiZq5sc/Gemini_Generated_Image_othtctothtctotht(1).png",
   "embeds" => [[
     "title" => $modo === "manual" ? "🚨 Sanción aplicada" : "🚨 Registro de sanción automática",
     "color" => $colores[$data["tipo"]] ?? hexdec("7289da"),
@@ -52,8 +52,8 @@ $payload = [
         ],
 
     "footer" => [
-      "text" => "📋 GTAZONE - Sistema de Sanciones",
-      "icon_url" => "https://r2.fivemanage.com/rfCrVWANawnX1lHiZq5sc/log_gtazone.png",
+      "text" => "📋 Sancionitas - Sistema de Sanciones",
+      "icon_url" => "https://r2.fivemanage.com/rfCrVWANawnX1lHiZq5sc/Gemini_Generated_Image_othtctothtctotht(1).png",
     ],
     "timestamp" => date("Y-m-d H:i")
   ]]
